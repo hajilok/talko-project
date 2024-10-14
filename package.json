@@ -1,0 +1,20 @@
+{
+  "name": "talkopushtx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^5.3.0",
+    "figlet": "^1.8.0",
+    "iziswap-sdk": "^2.0.0",
+    "web3": "^4.13.0"
+  }
+}
