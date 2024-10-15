@@ -2,6 +2,7 @@ import Web3 from "web3";
 import axios from "axios";
 
 const swapRitzu = async (priv) => {
+    try {
     const web3 = new Web3('https://rpc.taiko.xyz')
     const account = web3.eth.accounts.privateKeyToAccount(priv)
     web3.eth.accounts.wallet.add(account)
@@ -66,6 +67,9 @@ const swapRitzu = async (priv) => {
 
     const getData = await unwraped(priv)
     return getData.logs[0].transactionHash
+    } catch (error) {
+        console.log(`rpc error`)
+    }
 
 
 }
