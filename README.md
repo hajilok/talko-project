@@ -32,8 +32,8 @@ screen -R taiko
 ```
 
 Kalau sudah Silahkan Jalankan dengan perintah ini
-``
+```
 node index.js
-``
+```
 
 Join my channel : https://t.me/makmum
