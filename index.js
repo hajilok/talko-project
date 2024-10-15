@@ -26,10 +26,14 @@ const main = async () => {
 
     while (true) {
         for (let i = 0; i < wallet.length; i++) {
+           try {
             const walletAddress = wallet[i];
             const formattedPrivateKey = walletAddress.startsWith('0x') ? walletAddress : '0x' + walletAddress;
             const ritzu = await swapRitzu(formattedPrivateKey);
             console.log(chalk.bgGreen(`Succesfully Wraped And Unwraped Eth To Weth In Ritzu : https://taikoscan.io/tx/${ritzu}`));
+           } catch (error) {
+            console.log('Rpc Is error')
+           }
         }
 
         // Delay 1 menit sebelum loop dijalankan kembali
