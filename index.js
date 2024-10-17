@@ -2,6 +2,7 @@ import fs from 'fs/promises'
 import figlet from 'figlet';
 import chalk from 'chalk';
 import swapRitzu from './ritzu/swap.js';
+import voteRubyScore from './RubyScore/Vote.js';
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -30,9 +31,11 @@ const main = async () => {
             const walletAddress = wallet[i];
             const formattedPrivateKey = walletAddress.startsWith('0x') ? walletAddress : '0x' + walletAddress;
             const ritzu = await swapRitzu(formattedPrivateKey);
+            const vote = await voteRubyScore(formattedPrivateKey)
             console.log(chalk.bgGreen(`Succesfully Wraped And Unwraped Eth To Weth In Ritzu : https://taikoscan.io/tx/${ritzu}`));
+            console.log(chalk.bgGreen(`Succesfully Vote On RubyScore : https://taikoscan.io/tx/${vote}`));
            } catch (error) {
-            console.log('Rpc Is error')
+            console.log(`error in rpc`)
            }
         }
 
