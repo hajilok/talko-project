@@ -6,6 +6,10 @@ You can got maximum 1500000 Point day
 Oke Intinya Lu sebenernya bisa lakuin manual , karena cuma swap bolak balik aja tapi gassfee nya di metamask di setting ke 0.1 gwei 
 Tapi kalau mau Coba autonya silahkan saja 
 
+# Update 
+- Add Vote taiko on rubyScore
+- Fix Bug 
+
 Syarat : 
 - Your machine have installed node js
 - Eth Talko (Minimum $10 or $20 )
