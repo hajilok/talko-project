@@ -10,6 +10,7 @@ Tapi kalau mau Coba autonya silahkan saja
 - Add Vote taiko on rubyScore
 - Fix Bug 
 
+# Installation
 Syarat : 
 - Your machine have installed node js
 - Eth Talko (Minimum $10 or $20 )
