@@ -25,7 +25,7 @@ const voteRubyScore = async (privkey) => {
       value: web3.utils.toWei('0', 'ether'),
       data: data,
       gas: gasEstimate,
-      gasPrice: 200000000
+      gasPrice: 160000000
    }
 
    const receipt = await web3.eth.accounts.signTransaction(tx, privkey)
