@@ -26,7 +26,7 @@ const swapRitzu = async (priv) => {
             data: data,
             value: amount,
             gas: gasEstimate,
-            gasPrice: 200000000
+            gasPrice: 100000000
         }
         const receipt = await web3.eth.accounts.signTransaction(tx, getkey)
         const  txHash = await web3.eth.sendSignedTransaction(receipt.rawTransaction)
